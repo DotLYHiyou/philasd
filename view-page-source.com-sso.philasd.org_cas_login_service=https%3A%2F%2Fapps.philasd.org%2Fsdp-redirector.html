@@ -1,0 +1,395 @@
+<!DOCTYPE html><html>
+
+<head>
+    <meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><link rel="shortcut icon" href="https://cdn.philasd.org/theme/www/2.0.3/images/favicon.ico" type="image/x-icon" /><link rel="stylesheet" href="https://cdn.philasd.org/theme/www/2.0.3/icons/flaticon.php" type="text/css" /><title>Enter your Username and Password - School District of Philadelphia</title>
+
+    
+    <link rel="stylesheet" type="text/css" href="/webjars/normalize.css/8.0.1/normalize.css" /><link rel="stylesheet" type="text/css" href="/webjars/bootstrap/5.2.0/css/bootstrap-grid.min.css" /><link rel="stylesheet" type="text/css" href="/webjars/material-components-web/14.0.0/dist/material-components-web.min.css" /><link rel="stylesheet" type="text/css" href="/webjars/mdi__font/6.5.95/css/materialdesignicons.min.css" /><link rel="stylesheet" type="text/css" href=""/><script type="text/javascript" src="/webjars/jquery/3.6.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/css/cas.css"/><link rel="stylesheet" type="text/css" href="https://cdn.philasd.org/theme/cas/cas1.css" /><link rel="stylesheet" href="https://cdn.philasd.org/theme/www/2.0.3/style.css" type="text/css" /><!--<link rel="icon" th:href="@{/favicon.ico}" type="image/x-icon"/>--><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /></head>
+
+<body id="cas" class="login mdc-typography">
+<!--
+<script th:replace="fragments/scripts" />
+--><script type="text/javascript" src="https://cdn.philasd.org/theme/www/2.0.3/js/webapps-analytics.js"></script>
+
+	<div class="sr-onlys" id="skiplinks" role="navigation" aria-label="Skip links">
+		<a href="#contentskip">Skip to content</a>
+		<a href="#header">Skip to navigation</a>
+	</div>
+	
+	<!-- <div class="big-message sdp-alert high">
+		<div class="inner"><p>Scheduled Upgrade to District Sign-in Services on Monday, August 14, 2023 at 7:00 AM.</p></div>
+	</div> --><!--
+	<div class="big-message sdp-alert high" th:if="${flowRequestContext != null && flowRequestContext.flowScope.contains('decoration') && flowRequestContext.flowScope.get('decoration').containsKey('message')}">
+		<div class="inner" th:text="${flowRequestContext.flowScope.get('decoration').get('message')}" />
+	</div>
+	--><div class="sitewide-menu">
+
+		<div class="inner">
+
+			<h2>Main Menu</h2>
+
+			<nav class="mobile-nav" role="navigation" aria-label="Main Menu">
+				<script type="text/javascript" src="https://cdn.philasd.org/theme/www/2.0.3/js/webapps-mobile-menu.js"></script>
+			</nav>
+		</div>
+
+	</div><!-- end sitewide menu -->
+
+	<div role="region" aria-labelledby="search-button" id="search-function" class="sitewide-search">
+
+		<div class="inner">
+
+			<h2>Search the site:</h2>
+
+			<script type="text/javascript" src="https://cdn.philasd.org/theme/www/2.0.3/js/webapps-site-search.js"></script>
+
+		</div>
+
+	</div><!-- end sitewide search -->
+
+	<div class="languages">
+	
+	  <div class="inner">
+	
+	    <script type="text/javascript" src="https://cdn.philasd.org/theme/www/2.0.3/js/webapps-translation-gt.js"></script>
+	
+	  </div>
+	</div><!-- end languages -->
+
+	<div id="wrapper" class="main">
+
+		<div id="header" role="banner">
+
+			<div class="inner">
+
+				<a class="logo-link" href="https://www.philasd.org"><img src="https://cdn.philasd.org/theme/www/images/logo.png" class="logo" alt="School District of Philadelphia Logo" /></a>
+
+				<div class="navbar-wrapper">
+					<nav class="collapse navbar-collapse" role="navigation" aria-label="Main Menu">
+						<script src="https://cdn.philasd.org/theme/www/2.0.3/js/webapps-full-menu.js"></script>
+					</nav>
+	
+					<div class="type-scale">
+	
+						<button type="button" class="small" aria-label="set font size to small"><span class="notranslate">A</span></button>
+	
+						<button type="button" class="medium" aria-label="set font size to medium"><span class="notranslate">A</span></button>
+	
+						<button type="button" class="large" aria-label="set font size to large"><span class="notranslate">A</span></button>
+	
+					</div>
+					
+					<button aria-expanded="true" aria-controls="search-function" aria-label="Search the site" id="search-button" type="button" class="search-button">
+						<span class="visually-hidden">Search the site</span>
+						<span class="flaticon-magnifying-glass" aria-hidden="true"></span>
+					</button>
+	
+					<button type="button" class="menu-button" aria-expanded="false" aria-label="Mobile menu navigation"><span class="flaticon-menu" aria-hidden="true">Menu</span></button>	
+													
+				</div>
+				<div class="clear"></div>
+
+			</div>
+
+		</div><!-- end header -->
+		<div class="post">
+
+			<div class="inner" id="contentskip">
+
+				<div class="entry full">
+	
+					<div id="sdp-content" role="main">
+					
+						<div class="loginbanner"></div>
+						<div class="span8 widthFix">
+							<hr/></div>
+
+
+<div class="mdc-drawer-scrim"></div>
+
+<div class="mdc-drawer-app-content d-flex justify-content-center">
+    <main role="main" id="main-content" class="container-lg">
+        <div id="content" class="d-flex justify-content-center">
+
+        <!--<div class="d-flex justify-content-center flex-md-row flex-column mdc-card mdc-card-content">--><div class="d-flex justify-content-center flex-md-row flex-column">
+	<div class="d-flex justify-content-center flex-md-row flex-column">
+            <section id="loginForm"
+                class="login-section login-form">
+                <div class="box" id="login">
+    <div class="login-header">
+        <h1>Enter your Username and Password</h1> 
+        
+        <span class="fa-stack fa-2x hidden-xs">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+        </span>
+    </div>
+
+    <form method="post" id="fm1" action="login">
+
+	<!-- <h2 th:utext="#{screen.welcome.instructions}"></h2> --><section class="row">
+            <label for="username"><span class="accesskey">U</span>sername:</label>
+
+            <div>
+                <input class="required"
+                       id="username"
+                       size="25"
+                       tabindex="21"
+                       type="text"
+                       accesskey="u"
+                       autocomplete="off" 
+                       aria-required="true" name="username" value="" /></div>
+        </section>
+
+        <section class="row">
+            <script type="text/javascript">
+                function show_password() {
+                    var x = document.getElementById("password");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                }
+            </script>
+            <label for="password"><span class="accesskey">P</span>assword:</label>
+
+            <div>
+                <input class="required"
+                       type="password"
+                       id="password"
+                       size="25"
+                       tabindex="22"
+                       accesskey="p"
+                       autocomplete="off" 
+                       aria-required="true" name="password" value="" /><span id="capslock-on" style="display:none;">
+                    <p>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <span>CAPSLOCK key is turned on!</span>
+                    </p>
+                </span>
+            </div>
+        </section>
+
+        <div>
+	        <span class="fa fa-question-circle"></span>
+		 <div>
+                 <span class="fa fa-question-circle"></span>
+		 <span style='padding-left:10px'><input type="checkbox" id="showpass" name="showpass" onclick="show_password()" > <span style="color:#398635;font-family:Roboto,sans-serif; font-style: normal;font-weight:600;font-size:1.2m;line-height:1.4em;"> &nbsp;<label for="showpass">Show my password</label></span><br /><br /><a href="https://apps.philasd.org/accountsettings/default/forgot_password.htm" style='padding-left:10px;'>Forgot your password?</a></span>
+	    </div>
+    
+        <section class="row btn-row">
+            <input type="hidden" name="execution" value="3d6178a3-117a-4d8c-b505-ec20733f93a3_ZXlKaGJHY2lPaUpJVXpVeE1pSXNJblI1Y0NJNklrcFhWQ0lzSW10cFpDSTZJalE1TXpWa05qRTNMVE5rWWpNdE5HVTVNaTA0TW1abUxXTm1NalUyWTJZd1pERmpPU0o5Lk9TdWlsZzc0NTltbFVNYTFEVHR0NnExM185WVlDYnVXb1VYWVdtOXltRzZ3V0hqa3JHd29qSHpWTnRWQldaSEh2TGpXT2JYZHk0VWJKc3RNUWdwMWZDb3R3QmJRUWlWZWhoSWljbTVTd0l4SmVCa3hqOE5oUkhyYzlrVTB6UzJxcFhOUmNsWEo2d2Y4dVpDOUhra0puRktsMi1WaElYQ3lfb0V6WkF4RnIxNTZscW9FZWswNE5ETWJVQVVRSmdmZXZFcXRibmFHaXpicDBidlJEemJaVTNLX2RyNzlGanZhTXJ4Y09Ic2JjYlQxdllnSnNuOFhBN3NaVkJ6N3F0Vm5qMXhyMEpPM3NTcVlNSHVRemU5YVNPbVlvVW1RZGJWeTlJWlRJZFVmWDIybmxfZl92NU9qVUV1WHkwVzc2WDZ1YmRQTGE2ZVZxeEtIbFJaLUo0Q0tZdlFGSnB0UTdvMjhwLUV4d2lBR0ZpbjQwODJZQkl6ZHRvU3o1U0Y3MzBvTzhRenNjZ056RGoxTUhyS3o0ZmpKRmJzQ000YWpEdlZER2lkVlN1N0tJa08yd1BGeW1wSmFuT29YbW9zZXA0Y3pkVWF1YkgzbnR5d2VfTGhhV1NMckMxNUtaazVIQ2pTTDhPUTQ1RkRZN19LeWt2bUZYUjNoZHJGYm9VcDBtLXgzWFBJeVNiSElSY0JsVzZfNUpxc25nbHhpVnR3cTBsTVdRanN6MmJfWnlZZVliMFo2Wk9LN25VVzc3ak50YjRnbnJ5eGtKZmlRRE9JWkdBbVZIbDBtREdGN0tzT1FucnppTF96SWRGUmpxVGUtRjlsU2Rva1dTMEswb1JPdTItOUM4UVlFT25hdXRnN05ZeU9XLTBPd1pBTXlEMWdwVTlqUmdWaG45TlNhS3o0ZHpMRU5TMkUyek5TZ3dsclNvWTI4T1pyUGRwNlhEeXBBMWdVU21RbXI1RmRRNEtMWmJTcGVMelVGeENDYWl0dFdaSU1NbTBZM21RY1ZmTHNuSGVfLXROU0NFSE5zSXhHTHhEZ1BFREhxVzFYZ3FZZ0V4Y3I4UFFlTmx3Y3ppLVllSXJmLU8tbkx0ckI1OEhsMllMQmkyQWcxdjl2clJvV0szaUZvZG9hYzFPTzUxLVR1VW9IWUFKbWJhTDJrVjl4UkhqMzdUejhwTmZUR2RrRG0zaFA5T1NKTFhqV1BiOGhwTm5Fa0xKN0hZT1FGOUdqU242S1ZuUUo4RHRXZTJSQVQzdUpyTEpOUkpodUk2c1c3QlNNZDZFaEdGa0xSNDFNSWxvc1h3MVV0akVZZmdCbzh3bWYwbkplR2ViUGkzZG1SZTBYQW9BOXM0ZXVjOW1wdFNCcGNJT3hLZVhISXBSMllDamRROEt6MU5uUjBvZFZabDljNERpQm1vN0YtbkJHbnpwVXhRZklsLWJaX3F4eHhRamZrU0U0a1VBc25Eb2hfMDJXc3lYR2dscWVzeE5penFoVTNaX1kxblBxTFJ2VGptcFlxcGNqcnVLMl9rVFUtODIxOE5mN0hISkRxRDg1amRxSXlqMWd5clNWRE1yblU1RV85T2w5NEdhc1RiUmJlbDJ5RkhiSkZyR3FubDY4aGlFVDdCX2RPMWg1Tm9nTXB0QU8wMTFlNUdzOEtZQnl5ZzV2SENEdWtxZW9OMGZhREYzY0lwYXJaQWNyWkRfSWhtRXU0bkoyaDRUc1FVUE1GeVhXZlhackt3NDhGVXA4X19RdVBOXzZIV0FiZWFueF9fcmM0S2hDVkpicFZNN2Z3SlBpR3VybG9EVmltdk8wNEVibkZkV3ZJV2xvVXNYbXhuZDI3YjN5cnNodjVZal9wSHVUNG9WcGRsM09fb3Q4bzBoN204cm1ncXZfRzl2bnh2YTUtVDNDVDJDallGd2ZUeWoycy10ZU9MWmJwTW5yTC1RSmhMOGxna2F6SVZvU01YVlFEdDl2dTA4cFdBVldadFMyeElBNV8zTUQ0MTg3SzlENzFRR3pfY3p1emprN0VrdVpEM2dWcGRHdUhlS2RZSHlzNGJ6SnhFMURVaGpqQjQ4UlpiUXFVa2plbGwxOGJuR3BscFZkejJNS2RFdHNJS2RkcnkxRWdvWFZkVXc3Vk1abFhQemRzbHNwUWl0Z2VRWFItWHFSQks1MWthQkttZXpUX01UZDBJSkhYN0JWeTRjNno1dllZek5UU21TMGZ2WWRla2szWlYxM0tkRE4xQllEMk1kZmo4U1hKdnVaQ3ZMZlMyYUZpZ2V2aEs4M0lVRHNFTW1KcFVUd0NZTFlmbFZBU2hHRlZGdTFSWDJld0k5Nm5EMEtqXzVxMkN1bGhaZTBCdzBzTWI0WE8xY1lVRkEtNDF2V2U1c09zN2d1ZmFRM3dlcXp3THl4WUFlZ212eTVRTENyUVNlRkROWHBLVmRmQ3JQTW1CN1N0dW1yNVN2TThVNUt4SGFjanoxVUx6TWhkLVNsQzBfLVBKU21MVncwSmpkb2Q3VGVxaTFJV0MxVkMxR0ZVQWpISkN2UmlrTFZEdGhJZ3QtR0VnOWQxUkNVak4yZXotNDNLRnIySzNNcGZibTlUQWgwNEd1MmU5TWN6ejZxYjc3QWRNMkJJSTYxbmJHNTNVMTZ1eFpxcExOVVMtQVAtMDM3UUhXRHNSVkY0NXpJOE02cE5HV0lud3J1MTFyazlpZmpQR0gwQUgxMDI2OVhvUHZZa2FBVkpzTWw1QUVQYTUzNkhsVzgwY0VBOUgteVk2RDdiT3UtbDRjeDR3RHFNZGJZSEMtTDFsS3Q5ZDhZQkJIdEVmeWwzcXdTRUdhOXRUUnhydVVYWXpBRk9tLTc2dlBrQ2JvTTNtT3NBRmhrN3l0UmVPREtoMXFTaURhdVhqcjFiWnhZS183RmRZLW9iczlCcGJVUzJZWUZTT1cxRVh0dDdPZWFCNmFFaGFxbHc3WTIweWJyQTdTM3d0MXJKTUZrTGJsRDRsOFhtZlJ3S2lhQk8wYXJ6LVVweW04ZUxJNk9sY25STzFXdFRtSzZ2NXZBRm5UNDF0Q09jeVdoaHlUeDU4ZERrNmd2T3BfTnVsUUxZY1QxUjRBZE1RVWZMel9JSDZQeGNUdTdDV2k2cy13NW45b1ZKZ1hKdW5Db0ZzV0RjSFNGbU5RZXZwcXhXZzFmZWo2VXg1blpuck9ueGRqNUw3RFFkazdjaU5JTU9nemJDWnZuYk1SOFZLRS1tOFBLTGxmSUpiRGNtQmdXVTZHSGM1QVFkWVRJTVJhRW5ad3RNeXdsTEZPbXJydXVNOFRhVzhveEppN2laR3lyM21TV25YMFZKWHVyalFtLVBPazhHaXZ5ODJyX1JDRHNLYmttakxMVW9sbGVHZ2NBM1owOXJQVUh1aTRXZ1p2UlA0V25fUWRlNGpDak5DWDdjeDhVc0FQd2IxQU9QZzhNbDdsZ2xRcExBNjQ0UkpucXJYMkJEdHc0Nzc2MVJUVUpFYVlsTmVQdW1pb1R5NnA1aDRnVmZ6dzE4NkVJUTVQWEFLRThSZ0R4Nl9hSmsxNm8xMDBQX2VhWGIzNTNmUGVkelNvOGpsQnlaQWZKbzdkRXdZXzZvbUdlZFRvQ0FLYVhsZk04Q1RwQVVWVUpiSWQ3UEYwZVBYbzFQdlNOLUpVTVhqeE1wb0phWjVlUlZfbjd1YS1nekphRmNUUjhPNHByRVNZZDV2djRKWkI1UzVNNVV4U21EcnBwNGttSndtU285aUdJTGRNZkItcHMtODZkc2prN2syX0VFRG9pd3NyQkx2dUFZMkNOVlM5R1dHWXpSVHkyeUZxcmFUeHNfQkprNHBRTTN1VEZkYkRtVy1sN01OSEMxemFtMlJaUkxCZ2EzZVpjc1J5ZXlGU1lpX2ZwWG5qRllSS1l3azhTMmt0M3pzWnhEMEhjSTVjN0VvSWFORkJjaFZNZHBWdHZoWTlac1BoQmRMUndkcXRfdG9ZOGEtRFR1d01qSE9kdmlJWjVta0p5SW9TS2JDc05pUGJsNEZpelpYekdDXzdYRXU3dDlKVVA4Y1dBYkY1Mm5mbEVHQ0VUVzQ0UmY1bE9DTnZxeEt2VDNaNGo2eEZQQ0pfTkRKUmZWVVBUYXdaSmo0dS1IVDFFbHVLLVNFeUEtWWQ4NU9ocE5DdkRXbWRkdzdMUEtsSEs1ajczOUhTbGd3Q201cFdMMDhPMlpLQXI3RkdaTHBVQ1puMFU1YTF0SkFSZUVkanlQUl9FTVRzMHBhR3A0OVZqSDYzODN1VXM2N1otZnR5NU04LVhIWWNoRkp1MmRrTUFyZkl4VTBmZmxycFJqdl9kSHpCWTNfVTU5SFZQcDNZQ2ZaLThqSlAySGVONzRsWWlzWTJKdEFFSVZUY1hjdnF2MzdnV0NzT1VXekVnSEhRcFRTYUt3d2Ixc1VvUzZiRE10MEFxVTNiVld5TFZabkNNSkcyZmdiQ3RtX1UtSEo4Z1VuX1F0UldpOHlIQzFxMWduV1R5aGhFUnR6QTZkOFU3bWRBM3hYWTEyeXE2Wmo5dW1aRkpvRk5RblE5SnNVV0dOYTdFZkxNTFRhWU5iQlVEdG5Ud055RFQtWWw4X2t3U3ZUSXZPdEJCbDNRWTFqLWVIVWUyNE1XUndmOTA3R0dtZklCVDJBZ3FYU245WUtyNVRzdHJ2VC10NEJQTWJsc09pWW5fRE9LaWY2WGN3NUQ3NGN4ZkNlUi1CeW1VOGFBajdZRUVta001eWhRVTNYTkhPckZJNlJIdVdOQXJOaE0teXc3SVJNcXV1R3N0dmdva0RNckVxSS1XUE9oRGRiOEFEOWhQMmg1WjVua1dZaUhVNVU2S2YwTWJoNDIxbWlHakpVNWRXdUFKMFlYNkRvcTc2VjZta2cta2xodG5xRjBuZlpZd0RNSW8ybmw1aFRQZ2VtLWtqdU96TXlkZHMxdnl5c0FWQjh0VHRtbXRIWkdRaG96QWczM3VXZW9uem15Zmxwang1RElLM2VEQmRfeWpSN0JBcnQ2aTVuTHNCQkJnb0lmcWxJaWJoZ081b3ZjbVZkRHhqWGctVHd4Wk1DME9nSW1YeXlNa2xDMlZDVDMzYm5xQlNtd0tHcmQ4SVlUZ2RiRl8zWG96WVNoLURBVXMwQk1EUEI1UW9GSFo3MDVkaTNMWkV3aFFhbmZSMjhjRU4ydzc1b2pFbFlQeDg4ZThRZFJXTUxhYlJsNjNrUUc4VWVWQzMwRTNOUFF5c1dRZUFobDMxNHJSa0prTERIMHNwajZBREhGVlkucGhQblNNNTZUMlFLU3d6ajdrT2FIZ3Y2b3Q5UldWbUJMY2hhc0htU2IxbGduWmpnYTBMV2dlU3pqV0dpT3NnTnhtcGkwU3AyLUFvUjM2UXd3N1ptR3c="/><input type="hidden" name="_eventId" value="submit"/><input type="hidden" name="geolocation"/><input class="btn btn-submit btn-block"
+                   name="submit"
+                   accesskey="l"
+                   value="LOGIN"
+                   tabindex="26"
+                   type="submit"/></section>
+    </form>
+
+    <script type="text/javascript">
+        var i = "One moment please..."
+        $("#fm1").submit(function () {
+            $(":submit").attr("disabled", true);
+            $(":submit").attr("value", i);
+            return true;
+        });
+
+        window.onload = function() {
+            document.getElementById("username").focus();
+        }
+
+    </script>
+    <!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><title>Login Sidebar Fragment</title>
+    </head>
+<body>
+<main role="main" class="container mt-3 mb-3">
+    <div id="sidebar">
+        <div class="sidebar-content">
+            <p>For security reasons, please <a href="logout">log out</a> and exit your web browser when you are done accessing services that require authentication!</p>
+        </div>
+    </div>
+</main>
+</body>
+</html>
+</div>
+</section>
+            <section id="notices" class="login-section notices">
+                <!DOCTYPE html><html lang="en">
+
+<head>
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><title>Service UI Fragment</title>
+    </head>
+
+<body>
+<main role="main" class="container mt-3 mb-3">
+    <div id="serviceui" class="mb-4">
+        <div class="d-flex align-items-center p-2">
+            <div id="servicedesc" class="ml-2">
+                <h5><i class="mdi mdi-web"></i>Apps Service</h5>
+                <p>Apps Service Prod</p>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+
+</html>
+<div class="disclaimer">
+    <span>Access to the PhilaSD Portal is governed by the School District of Philadelphia's Acceptable Use Policy (<a target="_blank" href="//www.philasd.org/schoolboard/policies/">https://www.philasd.org/schoolboard/policies/</a>).  Unauthorized use of this system is strictly prohibited.<br><br>For security reasons, please quit your web browser when you are finished.</span>
+	<br/>
+	To find login help, <a target="_blank" href="https://www.philasd.org/ithelpdesk/faqs/login-help-for-philasd/ " aria-label="Login help"><b>click here.</b></a>
+	<br /> 
+	To register for a Parent Portal account, <a target="_blank" href="https://apps.philasd.org/accountsettings/guardian/registration.htm" aria-label="Register for a Parent Portal account"><b>click here.</b></a>
+	<br/>
+	To register for an Employee Portal and Email Account, <a target="_blank" href="https://apps.philasd.org/accountsettings/default/employee_registration.htm" aria-label="Register for an Employee Portal and Email account"><b>click here.</b></a>
+    <div style="color: red;">
+	    <br/><br/>PLEASE NOTE: The PhilaSD Portal may be unavailable due to maintenance on Sunday mornings from 6:00 am until 12:00 pm, until further notice.  Users may not be able to login during this time.
+    </div>
+</div>
+<!DOCTYPE html><html lang="en">
+
+<head>
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><title>loginProviders Fragment</title>
+    </head>
+
+<body>
+<main role="main" class="container mt-3 mb-3">
+    <div>
+            <script type="text/javascript">
+                let providers = [];
+            </script>
+            <script type="text/javascript">
+                /*<![CDATA[*/
+
+                let primaryUrl = null;
+                let primaryName = null;
+
+                const redirectTo = $("button[autoRedirectType=client]").attr("id");
+                if (primaryUrl != null) {
+                    console.log(`Redirecting to primary identity provider ${primaryName} via URL ${primaryUrl}`)
+                    let form = document.getElementById(`form${primaryName}`);
+                    form.submit();
+                }
+                else if (redirectTo !== null && redirectTo !== undefined) {
+                    console.log(`Redirecting to identity provider URL ${redirectTo}`)
+                    let form = document.getElementById(`form${redirectTo}`);
+                    form.submit();
+                } else {
+                    console.log("No identity provider is configured for auto redirection.");
+                }
+                /*]]>*/
+            </script>
+        </div>
+
+    </main>
+</body>
+
+</html>
+</div>
+            </section>
+        </div>
+    </div>
+    </main>
+</div>
+
+</div><!-- end content1 -->
+	
+				</div><!-- end entry -->
+
+			</div><!-- end inner -->
+
+		</div><!-- end post -->
+
+		<div id="footer">
+
+			<div class="inner">
+
+				<div class="upper">
+
+					<script type="text/javascript" src="https://cdn.philasd.org/theme/www/js/webapps-translation.js"></script>
+
+				</div><!-- end upper -->
+
+				<div class="lower">
+
+					<div class="half">
+
+						<script type="text/javascript" src="https://cdn.philasd.org/theme/www/js/webapps-social-address-2.0.0.js"></script>
+
+					</div>
+
+					<div class="half">
+
+						<script type="text/javascript" src="https://cdn.philasd.org/theme/www/js/webapps-footer-menu-2.0.0.js"></script>
+
+					</div>
+
+					<div class="clear"></div>
+
+				</div><!-- end lower -->
+
+			</div>
+
+		</div><!-- end footer -->
+
+	</div><!-- end wrapper -->
+
+	<script type='text/javascript' src="https://www.philasd.org/wp-content/plugins/aaa-wai-aria/wai-aria.js?ver=4.9.9"></script>
+    <script type='text/javascript' src="https://www.philasd.org/wp-content/themes/sdpweb/js/cookie.js"></script>
+    <script type="text/javascript">
+	
+		if(Cookies.get('TEXTSIZE')) { // look for a previous font size selection
+			$('body').addClass(Cookies.get('TEXTSIZE'));
+			$('.type-scale').find('button.' + Cookies.get('TEXTSIZE')).addClass('selected').attr('aria-current', 'true');
+		}
+		$('.type-scale button').click(function() { // change the font size based on a selection
+			//$('.entry, .sidebar').matchHeight();
+			var textSize = $(this).attr('class');
+			$('.type-scale').find('button').removeClass('selected').removeAttr('aria-current');
+			$(this).addClass('selected').attr('aria-current', 'true');
+			$('body').removeClass('small medium large').addClass(textSize);
+			Cookies.remove('TEXTSIZE'); // delete the old cookie & reset it
+			Cookies.set('TEXTSIZE', textSize, { expires: 3 }); // sets cookie and it expires in 3 days
+		});
+		$('#contentskip').attr('tabindex','-1');
+		$('#header').attr('tabindex','-2');
+		var toggled = false;
+
+		$('button.menu-button').click(function() { // open up sitewide menu
+			$("html, body").animate({ scrollTop: 0 });
+			$('.sitewide-menu').slideToggle();
+			$('.sitewide-menu').attr("tabindex",-1).focus();
+			
+			toggled = !toggled;
+			$(this).attr("aria-expanded", toggled ? true : false);
+			$('.flaticon-menu').text(toggled ? 'Menu expanded' : 'Menu collapsed');
+		});
+		$('button.search-button').click(function() { // open up sitewide search
+			$("html, body").animate({ scrollTop: 0 });
+			$('.sitewide-search').slideToggle();
+			$('#gsc-i-id1').focus();
+		});
+		$('ul.menu li').hover(function() { // basic drop-down functionality
+    			$(this).children('.sub-menu').show();
+    			$(this).addClass('selected');
+			}, function() {
+			$(this).children('.sub-menu').hide();
+			$(this).removeClass('selected');
+		});
+		$('.mobile-nav .menu-item a').focus(function() {
+			$(this).parent().find('.sub-menu').eq(0).show();
+		});
+		$('.menu-item').attr('role', 'menuitem');
+		$("#footer ul.menu li.sign a, .languages ul.menu li.sign a").prepend('<span class="flaticon-sign-language" aria-hidden="true"></span>');
+
+	</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --><!--<script th:src="@{${#themes.code('sdp.cdn.server')}} +'/js/bootstrap/3.1.1/js/bootstrap.min.js'"></script>--></body>
+</html>
